@@ -1,0 +1,22 @@
+
+
+// directory
+
+.directory-card{
+  overflow: hidden;
+
+  .directory-bg{
+    background-size: cover;
+    background-position: center center;
+  }
+
+ 
+  img{
+    position: relative;
+    top: 60px;
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+    border-radius: 0;
+  }
+}

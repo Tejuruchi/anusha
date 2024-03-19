@@ -1,0 +1,168 @@
+@media screen and (min-width:320px) and (max-width:720px){
+    .c{
+      height: 200px;
+      width: 150px;
+      float :left;
+      margin-left: 50px;
+      margin-top: 25px;
+    }
+    .b img{
+      height:80px ;
+      width: 100px;
+      margin: 0px;
+    }
+    .card-header p{
+      font-size: 5px;
+      width:120px;
+      margin: 0px;
+  
+    }
+    .card-header h{
+      font-size: 13px;
+      width:120px;
+      margin: 0px;
+  
+    }
+    .b p{
+      font-size: 3px;
+      width: 120px;
+    }
+    .f img{
+      width:100%;
+      height: 200px;
+    }
+    .button-container {
+      display: flex;
+      justify-content: center; /* Center align buttons by default */
+    }
+    
+    .button {
+      margin: 0 5px; /* Add some space between buttons */
+    }
+    
+  }
+  @media screen and (min-width:720px) and (max-width:3000px){
+    .c{
+      height: 450px;
+      width: 300px;
+      float :left;
+      margin-left: 100px;
+      margin-top: 50px;
+    }
+    .b img{
+      height:220px ;
+      width: 200px;
+      margin: 0px;
+  
+    }
+    .card-header p{
+      margin: 0px;
+      font-size: 10px;
+      width: 250px;
+    }
+    .card-header h{
+      font-size: 10px;
+      width:120px;
+      margin: 0px;
+  
+    }
+    .b p{
+      /* height:400px ; */
+      font-size: 10px;;
+      width: 250px;
+    }
+    .f img{
+      width:100%;
+      height: 478px;
+    }
+    .button-container {
+      justify-content: flex-end; /* Align buttons to the right for screens larger than 768px */
+    }
+    
+    }
+
+    /* Base styles for animation */
+.c {
+  transition: transform 0.3s ease; /* Smooth transformation upon hover */
+}
+
+.c:hover {
+  transform: scale(1.05); /* Slightly enlarge cards on hover */
+}
+
+@media screen and (min-width: 320px) and (max-width: 720px) {
+  .c {
+    height: auto; /* Adjusted for responsiveness */
+    width: 90%; /* Take up most of the screen width */
+    margin: 12px auto; /* Center cards with vertical spacing */
+  }
+  .b img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove default inline behavior */
+    margin: 0 auto; /* Center images */
+  }
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    align-items: center; /* Center buttons */
+  }
+  .button {
+    margin: 5px 0; /* Space out buttons vertically */
+  }
+}
+
+@media screen and (min-width: 720px) and (max-width: 3000px) {
+  .c {
+    height: auto; /* Adjust for content */
+    width: 25%; /* Adjust width for larger screens */
+    margin: 25px; /* More space around cards */
+    float: none; /* Avoid floating for flex/grid layouts */
+    display: inline-block; /* Align cards in rows */
+  }
+  .b img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .button-container {
+    justify-content: space-between; /* Adjust button alignment for wider screens */
+  }
+}
+/* General reset for the container */
+.cards-container {
+  display: flex; /* Use flexbox to arrange cards */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  justify-content: center; /* Center cards horizontally */
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Padding around the entire container */
+}
+
+/* Remove float and margin-left, adjust width and margin to auto for centering */
+.c {
+  float: none; /* Remove float */
+  margin-left: auto; /* Not strictly necessary with flexbox, kept for clarity */
+  margin-right: auto; /* Center the card if it's alone in a row */
+  transition: transform 0.3s ease; /* Smooth transformation upon hover */
+}
+
+.c:hover {
+  transform: scale(1.05); /* Slightly enlarge cards on hover */
+}
+
+/* Media queries adjustments */
+@media screen and (min-width: 320px) and (max-width: 720px) {
+  .c {
+    height: auto; /* Flexible height */
+    width: 90%; /* Adjust width to be responsive */
+    margin: 12px auto; /* Centering margin for when not using flexbox */
+  }
+  /* Other styles remain the same */
+}
+
+@media screen and (min-width: 720px) and (max-width: 3000px) {
+  .c {
+    height: auto; /* Flexible height for content */
+    width: calc(25% - 40px); /* Adjust width for 4 cards in a row, subtracting the gap */
+    margin: 20px; /* Margin to maintain spacing, not necessary with gap property in flex */
+  }
+  /* Other styles remain the same */
+}
